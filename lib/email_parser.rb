@@ -11,4 +11,8 @@ class EmailParser
     @@emails << emails.split(/[ ,]/)
     puts emails
   end
+  
+  def parse
+    @@emails
+  end
 end
