@@ -8,7 +8,7 @@ class EmailParser
   @@emails = []
   
   def initialize(emails)
-    emails.split(/ ,/).each{|email| @@emails << email}
+    @@emails = emails.split(/ ,/)
   end
   
   def parse
