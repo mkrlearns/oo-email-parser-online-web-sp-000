@@ -9,7 +9,7 @@ class EmailParser
   
   def initialize(emails)
     @@emails << emails.split(/ ,/)
-    @@emails.flatten
+    emails.each{|email| 
   end
   
   def parse
